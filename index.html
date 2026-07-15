@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVCafe - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="coffee-cup">
+            <div class="cup">
+                <div class="coffee"></div>
+            </div>
+            <div class="handle"></div>
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
+        </div>
+        <p class="loading-text">Brewing your experience...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>NVCafe</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Since 2015</span>
+            </div>
+            <h1 class="hero-title">
+                Experience the <span class="highlight">Perfect</span><br>
+                Cup of Coffee
+            </h1>
+            <p class="hero-subtitle">
+                Handcrafted beverages, artisanal pastries, and a cozy atmosphere that feels like home.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">
+                    <span>Explore Menu</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    <span>Our Story</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Coffee Varieties</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Expert Baristas</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Crafted with <span>Passion</span></h2>
+                <p class="section-desc">Every cup tells a story of dedication and love for coffee.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=700&fit=crop" alt="Coffee Shop Interior">
+                        <div class="experience-badge">
+                            <span class="exp-number">9+</span>
+                            <span class="exp-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Where Every Sip is a Journey</h3>
+                    <p>At NVCafe, we believe that coffee is more than just a beverage—it's an experience. Founded in 2015, we've been serving the finest specialty coffee sourced from sustainable farms around the world.</p>
+                    <p>Our expert baristas are passionate about their craft, ensuring every cup is brewed to perfection using state-of-the-art equipment and time-honored techniques.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Organic Beans</h4>
+                                <p>100% organic, ethically sourced</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Award Winning</h4>
+                                <p>Best cafe in the city 2023</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Made with Love</h4>
+                                <p>Handcrafted with care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Delicious <span>Offerings</span></h2>
+                <p class="section-desc">From classic espresso to creative concoctions, we have something for everyone.</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="coffee">
+                    <i class="fas fa-coffee"></i>
+                    <span>Coffee</span>
+                </button>
+                <button class="menu-tab" data-category="tea">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Tea</span>
+                </button>
+                <button class="menu-tab" data-category="pastries">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Pastries</span>
+                </button>
+                <button class="menu-tab" data-category="desserts">
+                    <i class="fas fa-ice-cream"></i>
+                    <span>Desserts</span>
+                </button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=400&h=400&fit=crop" alt="Espresso">
+                        <div class="menu-badge">Popular</div>
+                        <button class="add-to-cart" data-name="Espresso" data-price="3.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Espresso</h4>
+                        <p>Rich, bold single shot of pure coffee</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop" alt="Cappuccino">
+                        <button class="add-to-cart" data-name="Cappuccino" data-price="4.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Cappuccino</h4>
+                        <p>Perfect balance of espresso, milk, and foam</p>
+                        <div class="menu-footer">
+                            <span class="price">$4.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop" alt="Latte">
+                        <div class="menu-badge">Best Seller</div>
+                        <button class="add-to-cart" data-name="Vanilla Latte" data-price="5.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Vanilla Latte</h4>
+                        <p>Smooth espresso with vanilla and steamed milk</p>
+                        <div class="menu-footer">
+                            <span class="price">$5.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=400&fit=crop" alt="Cold Brew">
+                        <button class="add-to-cart" data-name="Cold Brew" data-price="4.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Cold Brew</h4>
+                        <p>12-hour steeped cold coffee, smooth and refreshing</p>
+                        <div class="menu-footer">
+                            <span class="price">$4.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tea Items -->
+                <div class="menu-item" data-category="tea" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&h=400&fit=crop" alt="Green Tea">
+                        <button class="add-to-cart" data-name="Green Tea" data-price="3.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Green Tea</h4>
+                        <p>Premium Japanese matcha green tea</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tea" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop" alt="Chai Latte">
+                        <button class="add-to-cart" data-name="Chai Latte" data-price="4.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Chai Latte</h4>
+                        <p>Spiced Indian tea with steamed milk</p>
+                        <div class="menu-footer">
+                            <span class="price">$4.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tea" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop" alt="Earl Grey">
+                        <button class="add-to-cart" data-name="Earl Grey" data-price="3.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Earl Grey</h4>
+                        <p>Classic black tea with bergamot</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="tea" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=400&h=400&fit=crop" alt="Herbal Tea">
+                        <button class="add-to-cart" data-name="Herbal Tea" data-price="3.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Herbal Tea</h4>
+                        <p>Refreshing blend of chamomile and mint</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pastries -->
+                <div class="menu-item" data-category="pastries" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=400&fit=crop" alt="Croissant">
+                        <button class="add-to-cart" data-name="Butter Croissant" data-price="3.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Butter Croissant</h4>
+                        <p>Flaky, buttery French pastry</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400&h=400&fit=crop" alt="Muffin">
+                        <div class="menu-badge">Fresh</div>
+                        <button class="add-to-cart" data-name="Blueberry Muffin" data-price="3.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Blueberry Muffin</h4>
+                        <p>Moist muffin bursting with fresh blueberries</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=400&fit=crop" alt="Cookie">
+                        <button class="add-to-cart" data-name="Chocolate Cookie" data-price="2.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Chocolate Cookie</h4>
+                        <p>Chewy cookie with Belgian chocolate chips</p>
+                        <div class="menu-footer">
+                            <span class="price">$2.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&h=400&fit=crop" alt="Danish">
+                        <button class="add-to-cart" data-name="Cheese Danish" data-price="3.75">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Cheese Danish</h4>
+                        <p>Creamy cheese filling in golden pastry</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.75</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop" alt="Tiramisu">
+                        <div class="menu-badge">Chef's Pick</div>
+                        <button class="add-to-cart" data-name="Tiramisu" data-price="6.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Tiramisu</h4>
+                        <p>Classic Italian coffee-flavored dessert</p>
+                        <div class="menu-footer">
+                            <span class="price">$6.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=400&fit=crop" alt="Cheesecake">
+                        <button class="add-to-cart" data-name="NY Cheesecake" data-price="5.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>NY Cheesecake</h4>
+                        <p>Rich and creamy with graham cracker crust</p>
+                        <div class="menu-footer">
+                            <span class="price">$5.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=400&fit=crop" alt="Donut">
+                        <button class="add-to-cart" data-name="Glazed Donut" data-price="2.00">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Glazed Donut</h4>
+                        <p>Soft, fluffy with sweet vanilla glaze</p>
+                        <div class="menu-footer">
+                            <span class="price">$2.00</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts" style="display: none;">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&h=400&fit=crop" alt="Brownie">
+                        <button class="add-to-cart" data-name="Fudge Brownie" data-price="3.50">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="menu-info">
+                        <h4>Fudge Brownie</h4>
+                        <p>Dense, chocolatey with walnuts</p>
+                        <div class="menu-footer">
+                            <span class="price">$3.50</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="offer-banner">
+        <div class="offer-content">
+            <div class="offer-text">
+                <span class="offer-label">Limited Time Offer</span>
+                <h2>Buy 2 Get 1 <span>Free</span></h2>
+                <p>On all specialty coffees every Friday!</p>
+                <a href="#menu" class="btn btn-light">Order Now</a>
+            </div>
+            <div class="offer-image">
+                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=500&h=500&fit=crop" alt="Special Offer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Our <span>Atmosphere</span></h2>
+                <p class="section-desc">Take a peek into our cozy and inviting space.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop" alt="Cafe Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop" alt="Coffee Art">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&h=300&fit=crop" alt="Coffee Beans">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="Barista">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&h=300&fit=crop" alt="Cozy Corner">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span>Customers</span> Say</h2>
+                <p class="section-desc">Real reviews from our beloved coffee lovers.</p>
+            </div>
+            <div class="reviews-slider" id="reviewsSlider">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Best coffee in town! The atmosphere is amazing and the staff is incredibly friendly. My go-to spot every morning!"</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The vanilla latte is absolutely divine. I love working from here - great WiFi, comfortable seating, and amazing coffee."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Michael">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">"Perfect place for a date or to catch up with friends. The pastries are fresh and the cold brew is top-notch!"</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Emma">
+                            <div class="author-info">
+                                <h4>Emma Williams</h4>
+                                <span>Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"I've tried coffee shops all over the world, and NVCafe ranks among the best. Their attention to detail is remarkable."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="David">
+                            <div class="author-info">
+                                <h4>David Park</h4>
+                                <span>Travel Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-nav">
+                    <button class="review-btn prev" id="reviewPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="review-dots" id="reviewDots"></div>
+                    <button class="review-btn next" id="reviewNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Visit <span>Us</span></h2>
+                <p class="section-desc">We'd love to hear from you. Drop by or send us a message!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>123 Coffee Lane, Downtown<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Fri: 7:00 AM - 10:00 PM<br>Sat - Sun: 8:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>hello@nvcafe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>NVCafe</span>
+                        </a>
+                        <p>Crafting the perfect cup since 2015. Visit us for an unforgettable coffee experience.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Our Menu</h4>
+                        <ul>
+                            <li><a href="#menu">Coffee</a></li>
+                            <li><a href="#menu">Tea</a></li>
+                            <li><a href="#menu">Pastries</a></li>
+                            <li><a href="#menu">Desserts</a></li>
+                            <li><a href="#menu">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers and updates!</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p> NVCafe. All rights reserved. Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Your cart is empty</p>
+                <span>Add some delicious items!</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <span>Checkout</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
